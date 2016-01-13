@@ -1,0 +1,170 @@
+@font-face {
+  font-family: HullF;
+  src: url("../bombard-webfont.ttf");
+}
+@@font-face {
+  fot-family: HullF;
+  src: url("../bombard-webfont.eot");
+}
+body {
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+}
+input.inputBox {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: solid 5px rgb(100, 100, 100);
+  font-size: 22pt;
+  transition: border;
+  transition-duration: 0.4s;
+  font-family: HullF;
+  margin: 20px auto;
+}
+input#nMod {
+  margin-left: 50px;
+  text-align: right;
+}
+input#shellDia {
+  margin-left: 50px;
+  text-align: right;
+}
+input#reloadTime {
+  /*margin-right: 50px;*/
+  text-align: right;
+}
+input#barrelCount {
+  width: 45px;
+  text-align: center;
+}
+input.inputBox:focus {
+  border-color: rgb(200, 200, 200);
+}
+div.Title {
+  font-family: HullF, monospace;
+  font-size: 70px;
+  margin-bottom: 40px;
+}
+div#centerInput {
+  margin: auto;
+  text-align: center;
+  font-family: HullF;
+  font-size: 30pt;
+  width: 80%;
+  border-left: white solid 3px;
+  border-right: white solid 3px;
+  padding: 20px 0px;
+}
+div.submitBtn {
+  font-family: HullF;
+  font-size: 35pt;
+  padding: 20px;
+  border: white solid medium;
+  width: 250px;
+  margin: auto;
+  cursor: pointer;
+  height: 50px;
+  position: relative;
+  margin-top: 35px;
+}
+span.btnTxt > span {
+  position: absolute;
+  display: block;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 20%;
+  bottom: 0;
+  margin: auto;
+  vertical-align: middle;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+.javascriptEnable {
+  font-size: 80pt;
+  font-family: monospace;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+}
+div#results {
+  font-family: HullF, monospace;
+  font-size: 18pt;
+  padding-top: 15px;
+}
+div#results div.segment {
+  border: white solid medium;
+  padding: 10px 20px;
+  width: 50%;
+  margin: 10px auto;
+  text-indent: 20px;
+}
+div#results div.dataBox {
+  border: yellow solid thick;
+  padding: 5px 10px;
+  margin: 10px;
+  font-weight: bold;
+  font-family: Dosis, monospace;
+  font-size: 24pt;
+  display: inline-block;
+  text-align: center;
+}
+div#results span.ammorackCount {
+  color: yellow;
+  /*border-bottom: solid yellow medium;*/
+  font-size: 22pt;
+}
+.hintS {
+  border: none;
+}
+.hintS .qtip-content {
+  font-size: 18px;
+  font-family: HullF;
+  background-color: rgb(28, 28, 28);
+  padding: 10px;
+  height: auto;
+  width: auto;
+  line-height: normal;
+  color: rgb(180, 180, 180);
+}
+.credits {
+  border: white solid medium;
+  position: fixed;
+  padding: 10px 20px;
+  font-family: HullF;
+  bottom: 10px;
+  left: 30px;
+  font-size: 17pt;
+}
+.linkToGame{
+  font-style: normal;
+  text-decoration: none;
+  margin: 5px;
+  padding: 2px 5px;
+  display: inline-block;
+  color: rgb(60, 51, 167);
+  margin-left: 0;
+
+}
+.linkToGame:hover {
+  /*background-color: rgb(28, 0, 0);*/
+  font-style: normal;
+  text-decoration: none;
+  color: rgb(140, 0, 0);
+}
+.linkToGame:visited{
+
+}
+
+.linkToGame:link{
+
+}

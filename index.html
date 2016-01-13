@@ -1,0 +1,86 @@
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<title>FtD AC Calculator</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/master.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/loading.css" />
+	<link type="text/css" rel="stylesheet" href="css/jquery.qtip.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Dosis:500' rel='stylesheet' type='text/css'>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="Title noselect">
+		From the Depth
+		<br> Advanced Cannon Calculator
+	</div>
+	<div class="javascriptEnable noselect">
+		Please enable your javascript!
+	</div>
+	<div id="centerInput">
+		<input type="text" class="inputBox" id="barrelCount" name="barrelCount" maxlength="1" onkeypress="validate(event, this)" title="Number of barrels you have." value="1" onblur="barrelVal(event, this)">
+		<input type="text" class="inputBox" id="reloadTime" name="reloadTime" placeholder="Barrel Cooldown" maxlength="13" onkeypress="validate(event, this)" title="The cooldown displayed when you view the advanced firing piece.">
+		<span class="noselect">s</span>
+		<input type="text" class="inputBox" id="shellDia" name="shellDia" placeholder="Shell diameter" maxlength="13" onkeypress="validate(event, this)" title="The shell diameter displayed when you view the advanced firing piece." onblur="shellDiaVal(event, this)">
+		<span class="noselect">mm</span>
+		<input type="text" class="inputBox" id="nMod" name="nMod" placeholder="Number of modules" maxlength="13" onkeypress="validate(event, this)" onblur="modulesVal(event, this)" title="Inside the ammo customizer, count the number of modules you have.">
+	</div>
+	<div id="results">
+		<div class="segment">
+			<span class="noselect">With <span class="ammorackCount">1</span> ammo rack connected to each autoloader: </span>
+			<br>
+			<div class="answerContainer">
+				<span class="label noselect">Autoloaders needed: </span>
+				<div class="dataBox"></div>
+			</div>
+		</div>
+		<div class="segment">
+			<span class="noselect">With <span class="ammorackCount">2</span> ammo rack connected to each autoloader: </span>
+			<br>
+			<div class="answerContainer">
+				<span class="label noselect">Autoloaders needed: </span>
+				<div class="dataBox"></div>
+			</div>
+
+		</div>
+		<div class="segment">
+			<span class="noselect">With <span class="ammorackCount">3</span> ammo rack connected to each autoloader: </span>
+			<br>
+			<div class="answerContainer">
+				<span class="label noselect">Autoloaders needed: </span>
+				<div class="dataBox"></div>
+			</div>
+
+		</div>
+		<div class="segment">
+			<span class="noselect">With <span class="ammorackCount">4</span> ammo rack connected to each autoloader: </span>
+			<br>
+			<div class="answerContainer">
+				<span class="label noselect">Autoloaders needed: </span>
+				<div class="dataBox"></div>
+			</div>
+
+		</div>
+	</div>
+	<div class="submitBtn noselect" onclick="calculate()">
+		<span class="btnTxt"></span>
+		<div class="circle"></div>
+		<div class="circle1"></div>
+	</div>
+
+<div class="credits noselect">
+	Made by Hand of C'thulhu <br>
+	Game: <a class="linkToGame" target="_blank" href="http://fromthedepthsgame.com/">From the Depths</a>
+</div>
+	<script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+	<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+	<script type="text/javascript" src="js/utilitiesScript.js"></script>
+	<script src="js/animations.js"></script>
+	<script type="text/javascript" src="js/calc.js"></script>
+</body>
+
+</html>
