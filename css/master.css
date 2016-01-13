@@ -1,10 +1,7 @@
 @font-face {
   font-family: HullF;
-  src: url("../bombard-webfont.ttf");
-}
-@@font-face {
-  fot-family: HullF;
   src: url("../bombard-webfont.eot");
+  src: local("@"), url("../bombard-webfont.ttf") format("truetype");
 }
 body {
   text-align: center;

@@ -31,6 +31,35 @@ $(document).ready(function()
   $span.eq(0).show();
   // $(".submitBtn").click(function()
   // {
+
+  $(".submitBtn").click(function()
+  {
+    if (IsEmptyOrSpaces($("#reloadTime").val()) || isNaN(+$("#reloadTime").val()))
+    {
+      $("#reloadTime").css("border-color", "red");
+    }
+    else
+    {
+      $("#reloadTime").css("border-color", "rgb(100, 100, 100)");
+    }
+    if (IsEmptyOrSpaces($("#nMod").val()) || isNaN(+$("#nMod").val()))
+    {
+      $("#nMod").css("border-color", "red");
+    }
+    else
+    {
+      $("#nMod").css("border-color", "rgb(100, 100, 100)");
+    }
+    if (IsEmptyOrSpaces($("#shellDia").val()) || isNaN(+$("#shellDia").val()))
+    {
+      $("#shellDia").css("border-color", "red");
+    }
+    else
+    {
+      $("#shellDia").css("border-color", "rgb(100, 100, 100)");
+    }
+
+  });
 });
 
 function toggleAnswer()

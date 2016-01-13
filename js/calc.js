@@ -47,9 +47,9 @@ function calculate()
   {
     if (!isNaN(+barrelCooldownInput.value) && !isNaN(+shellDiameterInput.value) && !isNaN(+nModInput.value))
     {
-      if (IsEmptyOrSpaces(barrelCooldownInput.value) && IsEmptyOrSpaces(shellDiameterInput.value))
+      if (IsEmptyOrSpaces(barrelCooldownInput.value) || IsEmptyOrSpaces(shellDiameterInput.value) || IsEmptyOrSpaces(nModInput.value))
       {
-        console.log("Please enter a number");
+        //console.log("Please enter a number");
       }
       else
       {
@@ -91,7 +91,6 @@ function calculate()
     }
     else
     {
-      console.log("Not a valid number!");
     }
   }else {
     toggleAnswer();
