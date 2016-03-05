@@ -34,7 +34,7 @@ $(document).ready(function()
 
   $(".submitBtn").click(function()
   {
-    if (IsEmptyOrSpaces($("#reloadTime").val()) || isNaN(+$("#reloadTime").val()))
+    if (IsEmptyOrSpaces($("#reloadTime").val()) || isNaN(+$("#reloadTime").val()) || #("#reloadTime").val() === "0")
     {
       $("#reloadTime").css("border-color", "red");
     }
